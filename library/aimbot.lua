@@ -6,6 +6,7 @@ local dwWorkspace = game:GetService("Workspace");
 local dwCamera = dwWorkspace.CurrentCamera;
 local dwPlayers = game:GetService("Players");
 
+
 local module = {
     Aimbot = {
         Enabled = false,
