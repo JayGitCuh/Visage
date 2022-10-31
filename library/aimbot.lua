@@ -89,6 +89,11 @@ function module.AimbotInit()
     --local closestpart
     task.spawn(function()
         dwRunservice.RenderStepped:Connect(function()
+            if UIS:IsMouseButtonPressed(Enum.UserInputType.MouseButton2) then
+                module.Aimbot.ButtonPressed = true
+            else
+                module.Aimbot.ButtonPressed = false
+            end
             fovcircle.Visible = module.Aimbot.ShowFov;
             fovcircle.Radius = module.Aimbot.FovSize * ((80 - dwCamera.FieldOfView )/100 + 1)
             fovcircle.Thickness = 0;
