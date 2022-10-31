@@ -333,7 +333,7 @@ function module.michaelvisual(v)
 
                 if module.Visual.michael.Enabled and displayEsp and magnitude < module.Visual.michael.ShowDistance then
                     --Filledbox
-                    esp.Box["Filledbox"].Visible = module.Visual.michael.Filledbox
+                    esp.Box["Filledbox"].Visible = module.Visual.michael.Filledbox and module.Visual.michael.Box
                     esp.Box["Filledbox"].Size = size
                     esp.Box["Filledbox"].Filled = module.Visual.michael.Filledbox
                     esp.Box["Filledbox"].Transparency = module.Visual.michael.FilledOpacity
